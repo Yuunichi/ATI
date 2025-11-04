@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yunior Moreno</title>
+    <link rel="icon" type="image/x-icon" href="https://campusvirtualucv.org/ead/pluginfile.php/1116432/mod_resource/content/2/favicon.ico">
+    <style>
+         #perfil-container {
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+            gap: 2.5px;
+        }
+
+        #perfil-img {
+            border-top-left-radius: 50%;
+            width: 150px;
+        }
+
+        #perfil {
+            border: 1px solid black;
+            box-shadow: 10px 10px 5px #7f7f7f;
+            padding: 10px;
+        }
+
+        #perfil h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: orange;
+        }
+
+        tr {
+            vertical-align: top;
+            min-height: 20px;
+        }
+
+        tr td:nth-of-type(2) {
+            padding-left: 50px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        #email {
+            text-decoration: none;
+            color: orange;
+        }
+
+        #email:hover {
+            text-decoration: underline;
+            color: red;
+        }
+    </style>
+<body> 
+    <div id="perfil-container"> 
+        <img id="perfil-img" src="26465131.jpg" alt="Yunior Moreno">
+        <div id="perfil">
+            <h1>Yunior Moreno</h1>
+            <i>Soy estudiante de ciencias de la computación de la Facultad de ciencias de la Universidad Central de Venezuela (UCV), la casa que vence las sombras. Actualmente cursando materias del quinto y sexto semestre y el seminario de servicio comunitario. Con miras a entrar en el mundo laboral como computista.</i>
+          <table id="info">
+                <tr>
+                    <td>Mi color favorito es:</td>
+                    <td>Morado</td>
+                </tr>
+                <tr>
+                    <td>Mi libro favorito es:</td>
+                    <td>Metro 2035</td>
+                </tr>
+                <tr>
+                    <td>Estilo de Música preferida es:</td>
+                    <td>Rock Alternativo</td>
+                </tr>
+                <tr>
+                    <td>Mis videojuegos favoritos son:</td>
+                    <td>Hollow Knight, TLoZ: Ocarina of Time, Saga Metro.</td>
+                </tr>
+                <tr>
+                    <td class="bold">Lenguajes aprendidos:</td>
+                    <td class="bold">Python, Java, JavaScript</td>
+                </tr>
+        </table>
+
+        <p>Si necesitan comunicarse conmigo me pueden escribir a: <a id="email" href="mailto:yunioramv@gmail.com">yunioramv@gmail.com</a></p>   
+
+    </div> <!-- cierre de perfil -->
+</div> <!-- cierre de perfil-container -->
+</body>
+</html>
