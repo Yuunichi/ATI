@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio</title>
+    <style>
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            background-color: white;
+        }
+
+        nav ul {
+            background-color: #87b1ef;
+            color: white;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        #directorio-section {
+            width: 90%;
+            padding: 20px;
+        }
+
+        .contenedor_directorio {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3,fr);
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        .entrada_directorio {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f5f7f9;
+            box-shadow: 5px 5px 5px #7f7f7f;
+            color: #87b1ef;
+            
+        }
+
+
+
+
+        .uno img {
+            width: 75%;
+            height: 50%;
+            object-fit: cover;
+        }   
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            background-color: #87b1ef;
+            color: black;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            margin-top: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="nav_curso">ATI<sub>[UCV]</sub>2025-2</li>
+                <li id="nav_saludo">Hola, Yunior Moreno</li>
+                <li id="nav_buscar"><form action="index.html" method="get">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre...">
+                    <button id="buscar" type="submit">Buscar</button>
+                </form></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <section id="directorio-section">
+        <ul class="contenedor_directorio">
+            <li class="entrada_directorio uno"><img src="26465131/26465131-dir.jpg" alt=""><p>Yunior Moreno</p></li>
+            <li class="entrada_directorio dos"><img src="dummies/dummy6/dummy.jpg" alt="" ><p>Juan Antonio Perez</p></li>
+            <li class="entrada_directorio tres"><img src="dummies/dummy3/dummy.jpg" alt="" ><p>Maritza Rodriguez</p></li>
+            <li class="entrada_directorio cuatro"><img src="dummies/dummy1/dummy.jpg" alt="" ><p>Emilia Casado</p></li>
+            <li class="entrada_directorio cinco"><img src="dummies/dummy4/dummy.jpg" alt="" ><p>Enrique Colina</p></li>
+            <li class="entrada_directorio seis"><img src="dummies/dummy2/dummy.jpg" alt="" ><p>Maria Elena Pinto</p></li>
+            <li class="entrada_directorio siete"><img src="dummies/dummy5/dummy.jpg" alt="" ><p>Ronald Gutierrez</p></li>
+            <li class="entrada_directorio ocho"><img src="dummies/dummy6/dummy.jpg" alt="" ><p>Juan Antonio Perez</p></li>
+            <li class="entrada_directorio nueve"><img src="dummies/dummy3/dummy.jpg" alt="" ><p>Maritza Rodriguez</p></li>
+            <li class="entrada_directorio diez"><img src="dummies/dummy1/dummy.jpg" alt="" ><p>Emilia Casado</p></li>
+            <li class="entrada_directorio once"><img src="dummies/dummy4/dummy.jpg" alt="" ><p>Enrique Colina</p></li>
+            <li class="entrada_directorio doce"><img src="dummies/dummy2/dummy.jpg" alt="" ><p>Maria Elena Pinto</p></li>
+        </ul>
+    </section>
+    <br>
+    <footer>Copyright © 2025 Escuela de computación -
+ATI. Todos los derechos reservados</footer>
+    
+</body>
+</html>
