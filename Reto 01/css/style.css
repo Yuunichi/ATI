@@ -54,7 +54,14 @@
             color: #87b1ef;
         }
 
-      
+        .entrada_directorio:hover
+        {
+            transform: scale(1.1);
+            transform: rotate(5deg);
+            transition: all 0.3s ease-in-out;
+            background-color: #99c5dd;
+            cursor: pointer;
+        }
 
         .uno img {
             width: 75%;
