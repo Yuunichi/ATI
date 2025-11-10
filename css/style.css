@@ -1,0 +1,145 @@
+/* profil styles */
+
+#perfil-container {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  gap: 2.5px;
+}
+
+#perfil-img {
+  border-top-left-radius: 50%;
+  width: 150px;
+}
+
+#perfil {
+  border: 1px solid black;
+  box-shadow: 10px 10px 5px #7f7f7f;
+  padding: 10px;
+}
+
+#perfil h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: orange;
+}
+
+tr {
+  vertical-align: top;
+  min-height: 20px;
+}
+
+tr td:nth-of-type(2) {
+  padding-left: 50px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#email {
+  text-decoration: none;
+  color: orange;
+}
+
+#email:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+/* index styles */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  background-color: white;
+}
+
+nav ul {
+  background-color: #87b1ef;
+  color: white;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+#directorio-section {
+  width: 90%;
+  padding: 20px;
+}
+
+.contenedor_directorio {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0;
+  padding-bottom: 3%;
+  margin: 0;
+  list-style-type: none;
+}
+
+.entrada_directorio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f5f7f9;
+  box-shadow: 5px 5px 5px #7f7f7f;
+  color: #87b1ef;
+}
+
+.entrada_directorio:hover {
+  transform: scale(1.1);
+  transform: rotate(5deg);
+  transition: all 0.3s ease-in-out;
+  background-color: #99c5dd;
+  cursor: pointer;
+}
+
+.uno img {
+  width: 75%;
+  height: 50%;
+  object-fit: cover;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #87b1ef;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Dispositivos móviles */
+@media (min-width: 320px) and (max-width: 480px) {
+  * {
+    font-size: 1em;
+  }
+}
+/* iPads y tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+/* Pantallas pequeñas, ordenadores portátiles */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+/* Pantallas grandes, ordenadores de escritorio */
+@media (min-width: 1025px) and (max-width: 1200px) {
+}
