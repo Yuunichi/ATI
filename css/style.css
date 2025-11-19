@@ -1,5 +1,13 @@
 /* profil styles */
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
 #perfil-container {
   display: flex;
   flex-direction: row;
@@ -8,8 +16,11 @@
 }
 
 #perfil-img {
-  border-top-left-radius: 50%;
+  border-top-left-radius: 50%;   
   width: 150px;
+  /*max-width: 100%;*/
+  height: auto;
+  align-self: center;
 }
 
 #perfil {
@@ -24,9 +35,17 @@
   color: orange;
 }
 
+i {
+  font-size: 1.1m;
+}
+
 tr {
   vertical-align: top;
   min-height: 20px;
+}
+
+tr td, p, nav > ul > li {
+  font-size: 1em;
 }
 
 tr td:nth-of-type(2) {
@@ -47,7 +66,13 @@ tr td:nth-of-type(2) {
   color: red;
 }
 
-/* index styles */
+/* index styles (Directorio)*/ 
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -57,6 +82,7 @@ body {
   padding: 0;
   width: 100%;
   min-height: 100vh;
+  
 }
 
 header {
@@ -84,16 +110,16 @@ nav ul {
 .contenedor_directorio {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   gap: 20px;
   padding: 0;
-  padding-bottom: 3%;
+  padding-bottom: 3%;   
   margin: 0;
   list-style-type: none;
 }
 
+
 .entrada_directorio {
-  display: flex;
+  display:flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid #ccc;
@@ -101,24 +127,28 @@ nav ul {
   background-color: #f5f7f9;
   box-shadow: 5px 5px 5px #7f7f7f;
   color: #87b1ef;
+  transition: all 0.3s ease-in-out;
 }
 
 .entrada_directorio:hover {
-  transform: scale(1.1);
-  transform: rotate(5deg);
-  transition: all 0.3s ease-in-out;
+  transform: scale(1.1) rotate(5deg);
   background-color: #99c5dd;
   cursor: pointer;
 }
 
+.entrada_directorio img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* 
 .uno img {
   width: 75%;
   height: 50%;
   object-fit: cover;
-}
+} */
 
 footer {
-  position: fixed;
   bottom: 0;
   background-color: #87b1ef;
   color: black;
@@ -128,14 +158,18 @@ footer {
   margin-top: auto;
 }
 
+
 /* Dispositivos móviles */
 @media (min-width: 320px) and (max-width: 480px) {
-  * {
-    font-size: 1em;
+  .contenedor_directorio {
+    grid-template-columns: 1fr;
   }
 }
 /* iPads y tablets */
 @media (min-width: 481px) and (max-width: 768px) {
+  .contenedor_directorio {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 /* Pantallas pequeñas, ordenadores portátiles */
 @media (min-width: 769px) and (max-width: 1024px) {
