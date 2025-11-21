@@ -105,22 +105,19 @@ nav ul {
   font-size: 1.5em;
 }
 
-#directorio-section {
-  width: 90%;
-  padding: 20px;
-}
-
-.contenedor_directorio {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  padding: 0;
-  padding-bottom: 3%;
-  margin: 0;
-  list-style-type: none;
+#directorio {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1% 2.5% 1% 2.5%;
+  max-height: 100%;
 }
 
 .entrada_directorio {
+  flex: 1 0 21%; 
+  margin: 5px;
+  height: 200px;
+  max-height: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -140,15 +137,14 @@ nav ul {
 
 .entrada_directorio img {
   max-width: 100%;
-  height: auto;
+  max-height: 80%;
+  object-fit: cover;
 }
 
-/* 
-.uno img {
-  width: 75%;
-  height: 50%;
-  object-fit: cover;
-} */
+.entrada_directorio p {
+    margin: 0px;
+    text-align: center;
+}
 
 footer {
   bottom: 0;

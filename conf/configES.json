@@ -2,7 +2,7 @@ const config = {
 	"sitio": ["ATI","[UCV]","2024-1"],
 	"home": "Inicio",
 	"login": "Entrar",
-	"copyRight":"Copyright © 2024 Escuela de computación - ATI. Todos los derechos reservados",
+	"copyRight":"Copyright © 2025 Escuela de computación - ATI. Todos los derechos reservados",
 	"nombre":"Yunior Moreno", // Valor original: Nombre	
 	"descripcion":"",
 	"color":"Mi color favorito es",
