@@ -3,10 +3,11 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-
 
 #perfil-container {
   display: flex;
@@ -16,7 +17,7 @@ html {
 }
 
 #perfil-img {
-  border-top-left-radius: 50%;   
+  border-top-left-radius: 50%;
   width: 150px;
   /*max-width: 100%;*/
   height: auto;
@@ -44,7 +45,9 @@ tr {
   min-height: 20px;
 }
 
-tr td, p, nav > ul > li {
+tr td,
+p,
+nav > ul > li {
   font-size: 1em;
 }
 
@@ -66,7 +69,7 @@ tr td:nth-of-type(2) {
   color: red;
 }
 
-/* index styles (Directorio)*/ 
+/* index styles (Directorio) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 
 ::before,
 ::after {
@@ -82,7 +85,6 @@ body {
   padding: 0;
   width: 100%;
   min-height: 100vh;
-  
 }
 
 header {
@@ -91,12 +93,13 @@ header {
 }
 
 nav ul {
-  background-color: #87b1ef;
-  color: white;
-  list-style-type: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  background-color: #87b1ef;
+  color: white;
+  list-style-type: none;
   padding: 10px 20px;
   margin: 0;
   font-size: 1.5em;
@@ -112,14 +115,13 @@ nav ul {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 0;
-  padding-bottom: 3%;   
+  padding-bottom: 3%;
   margin: 0;
   list-style-type: none;
 }
 
-
 .entrada_directorio {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid #ccc;
@@ -136,9 +138,9 @@ nav ul {
   cursor: pointer;
 }
 
-.entrada_directorio img{
-    max-width: 100%;
-    height: auto;
+.entrada_directorio img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* 
@@ -157,7 +159,6 @@ footer {
   width: 100%;
   margin-top: auto;
 }
-
 
 /* Dispositivos móviles */
 @media (min-width: 320px) and (max-width: 480px) {
