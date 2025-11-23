@@ -1,7 +1,7 @@
-const perfil_ = {	
+const perfil = {	
 	"nombre":"Yunior Moreno",
 	"descripcion":"Soy estudiante de ciencias de la computación de la Facultad de ciencias de la Universidad Central de Venezuela (UCV), la casa que vence las sombras. Actualmente cursando materias del quinto y sexto semestre y el seminario de servicio comunitario. Con miras a entrar en el mundo laboral como computista.",
-	"color": "Morada",
+	"color": "Morado",
 	"libro": ["Metro 2035"],
 	"musica": ["Rock Alternativo"],
 	"video_juego": ["Hollow Knight, TLoZ: Ocarina of Time, Saga Metro."],

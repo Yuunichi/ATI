@@ -1,8 +1,12 @@
 /* profil styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+* {
+    font-size: 1em;
+}
 
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -10,24 +14,26 @@ html {
 }
 
 #perfil-container {
+  margin-top: 5%;
   display: flex;
   flex-direction: row;
   text-align: left;
   gap: 2.5px;
+  max-width: 60%;
 }
 
 #perfil-img {
   border-top-left-radius: 50%;
   width: 150px;
-  /*max-width: 100%;*/
-  height: auto;
+  height: 26rem;
   align-self: center;
+
 }
 
 #perfil {
   border: 1px solid black;
+  padding: 1%;
   box-shadow: 10px 10px 5px #7f7f7f;
-  padding: 10px;
 }
 
 #perfil h1 {
