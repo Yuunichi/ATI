@@ -1,17 +1,19 @@
-/* profil styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* general styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
 * {
-	font-size: 1em;
+	font-size: 16px;
 }
+
+/* *,
+*:before,
+*:after {
+	box-sizing: inherit;
+} */
 
 html {
 	box-sizing: border-box;
 }
-
-*,
-*:before,
-*:after {
-	box-sizing: inherit;
-}
+/* profil styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 #perfil-container {
 	margin-top: 5%;
@@ -46,19 +48,9 @@ i {
 	font-size: 1.1m;
 }
 
-tr {
-	vertical-align: top;
-	min-height: 20px;
-}
-
-tr td,
 p,
 nav > ul > li {
 	font-size: 1em;
-}
-
-tr td:nth-of-type(2) {
-	padding-left: 50px;
 }
 
 .bold {
@@ -77,10 +69,10 @@ tr td:nth-of-type(2) {
 
 /* index styles (Directorio) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 
-::before,
+/* ::before,
 ::after {
-	box-sizing: border-box;
-}
+  box-sizing: border-box;
+}  */
 
 body {
 	display: flex;
@@ -108,7 +100,7 @@ nav ul {
 	list-style-type: none;
 	padding: 10px 20px;
 	margin: 0;
-	font-size: 1.5em;
+	font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
 }
 
 #directorio {
